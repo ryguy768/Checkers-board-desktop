@@ -1,16 +1,16 @@
 function toggle(cell) {
     console.log('toggling cell:', cell);
-    let greenChecker = cell.children[0];
-    let blackChecker = cell.children[1];
+    let blueChecker = cell.children[0];
+    let redChecker = cell.children[1];
     
-    if (!greenChecker.hidden && blackChecker.hidden) {
-        greenChecker.hidden = true;
-        blackChecker.hidden = false;
-    } else if (greenChecker.hidden && !blackChecker.hidden) {
-        greenChecker.hidden = true;
-        blackChecker.hidden = true;
+    if (!blueChecker.hidden && redChecker.hidden) {
+        blueChecker.hidden = true;
+        redChecker.hidden = false;
+    } else if (blueChecker.hidden && !redChecker.hidden) {
+        blueChecker.hidden = true;
+        redChecker.hidden = true;
     } else {
-        greenChecker.hidden = false;
-        blackChecker.hidden = true;
+        blueChecker.hidden = false;
+        redChecker.hidden = true;
     }
 }

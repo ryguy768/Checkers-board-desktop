@@ -13,11 +13,11 @@
       margin: -2px;
       
       }
-      .grey{
-        background-color: #7d7575;
+      .blue{
+        background-color: #0015BC;
       }
-      .white{
-        background-color: #ffffff;
+      .red{
+        background-color: #FF0000;
       }
       .checker{
         margin: 10px;
@@ -26,9 +26,14 @@
         width: 80px;
       }
 
-      .black-checker{
-        background-color: #080707;
+      .red-checker{
+        /* background-color: #080707; */
+        background-image: url("Images/Trump-Checker.jpg");
+        background-size: cover;
+        
       }
-      .green-checker{
-        background-color: rgb(64, 136, 81);
+      .blue-checker{
+        /* background-color: rgb(64, 136, 81); */
+        background-image: url("Images/Biden-Checkers.jpg");
+        background-size: cover;
       }
