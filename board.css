@@ -1,40 +1,56 @@
-.row{
-    /* display: flex;  */
-    /* justify-content: space-evenly; */
-    /* border: 1px solid black; */
-    width: 828.1px;
-    height: 100px;
-  }
-  .cell{
-      /* border: 1px solid gold; */
-      width: 100px;
-      height: 100px;
-      display: inline-block;
-      margin: -2px;
-      
-      }
-      .blue{
-        background-color: #0015BC;
-      }
-      .red{
-        background-color: #FF0000;
-      }
-      .checker{
-        margin: 10px;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        border: 3px solid white;
-      }
+body {
+  background-color: lightgray;
+  text-align: center;
+}
 
-      .red-checker{
-        /* background-color: #080707; */
-        background-image: url("Images/Trump-Checker.jpg");
-        background-size: cover;
-        
-      }
-      .blue-checker{
-        /* background-color: rgb(64, 136, 81); */
-        background-image: url("Images/Biden-Checkers.jpg");
-        background-size: cover;
-      }
+#board-container {
+  border: 3px solid navy;
+}
+
+.row {
+
+  /* display: flex;  */
+  /* justify-content: space-evenly; */
+  /* border: 1px solid black; */
+  width: 828.1px;
+  height: 100px;
+  margin: auto;
+}
+
+.cell {
+  /* border: 1px solid gold; */
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: -2px;
+
+}
+
+.blue {
+  background-color: #0015BC;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.checker {
+  margin: 10px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border: 3px solid white;
+}
+
+.red-checker {
+  /* background-color: #080707; */
+  background-image: url("Images/Trump-Checker.jpg");
+  background-size: cover;
+
+}
+
+.blue-checker {
+  /* background-color: rgb(64, 136, 81); */
+  background-image: url("Images/Biden-Checkers.jpg");
+  background-size: cover;
+}
