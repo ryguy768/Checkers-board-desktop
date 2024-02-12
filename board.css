@@ -1,41 +1,22 @@
-.row{
-    /* display: flex;  */
-    /* justify-content: space-evenly; */
-    /* border: 1px solid black; */
-    width: 828.1px;
-    height: 100px;
-  }
-  .cell{
-      /* border: 1px solid gold; */
-      width: 100px;
-      height: 100px;
-      display: inline-block;
-      margin: -2px;
-      
-      }
-      .blue{
-        background-color: #0015BC;
-      }
-      .red{
-        background-color: #FF0000;
-      }
-      .checker{
-        margin: 10px;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        border: 2px solid white;
-      }
+body {
+  background-color: lightgray;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
 #board-container {
   /* border: 3px solid navy; */
   display: inline-block;
   padding: 20px;
+
 }
+
 
 .row {
   display: flex;
   justify-content: center;
+
 }
 
 .cell {
