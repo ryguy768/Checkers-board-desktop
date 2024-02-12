@@ -14,3 +14,4 @@ function toggle(cell) {
         redChecker.hidden = true;
     }
 }
+

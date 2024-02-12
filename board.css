@@ -17,8 +17,8 @@ body {
 }
 
 .cell {
-  width: 8vw; 
-  height: 8vw; 
+  width: 8vw;
+  height: 8vw;
   margin: 0px;
   display: inline-block;
   width: 10vh;
@@ -36,8 +36,8 @@ body {
 .checker {
   margin: 10%;
   border-radius: 50%;
-  height: 80%; 
-  width: 80%; 
+  height: 80%;
+  width: 80%;
   border: 1px solid white;
 }
 
