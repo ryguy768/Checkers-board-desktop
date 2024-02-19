@@ -1,17 +1,23 @@
-function toggle(cell) {
-    console.log('toggling cell:', cell);
-    let blueChecker = cell.children[0];
-    let redChecker = cell.children[1];
-
-    if (!blueChecker.hidden && redChecker.hidden) {
-        blueChecker.hidden = true;
-        redChecker.hidden = false;
-    } else if (blueChecker.hidden && !redChecker.hidden) {
-        blueChecker.hidden = true;
-        redChecker.hidden = true;
-    } else {
-        blueChecker.hidden = false;
-        redChecker.hidden = true;
+$(document).ready(function () {
+    console.log("document ready");
+    $(".red.cell, .blue.cell").click(toggle);
+  });
+  
+  function toggle() {
+    let checker = $(this).children().first();
+    checker.toggle();
+    if (!checker.is(":visible")) {
+      switchColor(checker);
     }
-}
-
+  }
+  
+  function switchColor(checker) {
+    if (checker.hasClass("red-checker")) {
+      checker.removeClass("red-checker");
+      checker.addClass("blue-checker");
+    } else {
+      checker.addClass("red-checker");
+      checker.removeClass("blue-checker");
+    }
+  }
+  
