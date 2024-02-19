@@ -1,17 +1,18 @@
-function toggle(cell) {
-    console.log('toggling cell:', cell);
-    let blueChecker = cell.children[0];
-    let redChecker = cell.children[1];
-
-    if (!blueChecker.hidden && redChecker.hidden) {
-        blueChecker.hidden = true;
-        redChecker.hidden = false;
-    } else if (blueChecker.hidden && !redChecker.hidden) {
-        blueChecker.hidden = true;
-        redChecker.hidden = true;
+function toggle() {
+    let checkers = $(this).children()
+    if (checkers[0].hidden && checkers[1].hidden) {
+        checkers[0].hidden = false
+        checkers[1].hidden = true
+    } else if (!checkers[0].hidden && checkers[1].hidden) {
+        checkers[0].hidden = true
+        checkers[1].hidden = false
     } else {
-        blueChecker.hidden = false;
-        redChecker.hidden = true;
+        checkers[0].hidden = true
+        checkers[1].hidden = true
     }
 }
 
+$(document).ready(function () {
+    console.log('document ready')
+    $('.red.cell').click(toggle)
+})
