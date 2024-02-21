@@ -1,5 +1,5 @@
 body {
- background-color: lightgray;
+  background-color: lightgray;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -9,14 +9,11 @@ body {
   /* border: 3px solid navy; */
   display: inline-block;
   padding: 20px;
-
 }
-
 
 .row {
   display: flex;
   justify-content: center;
-
 }
 
 .cell {
@@ -29,11 +26,11 @@ body {
 }
 
 .blue {
-  background-color: #0015BC;
+  background-color: #0015bc;
 }
 
 .red {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .checker {
@@ -44,12 +41,10 @@ body {
   border: 1px solid white;
 }
 
-
 .red-checker {
   /* background-color: #080707; */
   background-image: url("Images/Trump-Checker.jpg");
-  background-size:cover;
-
+  background-size: cover;
 }
 
 .blue-checker {
