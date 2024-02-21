@@ -1,7 +1,8 @@
 $(document).ready(function () {
   console.log("document ready");
   $("#board-container").html(renderBoard());
-  $(".red.cell, .blue.cell").click(toggle);
+  $(".red.cell").click(selectChecker);
+  renderCheckers();
 });
 
 function toggle() {
