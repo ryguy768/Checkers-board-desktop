@@ -1,27 +1,9 @@
 $(document).ready(function () {
   console.log("document ready");
   $("#board-container").html(renderBoard());
+
   renderCheckers();
-  $(".checker").click(selectChecker);
 });
-
-function toggle() {
-  let checker = $(this).children().first();
-  checker.toggle();
-  if (!checker.is(":visible")) {
-    switchColor(checker);
-  }
-}
-
-function switchColor(checker) {
-  if (checker.hasClass("red-checker")) {
-    checker.removeClass("red-checker");
-    checker.addClass("blue-checker");
-  } else {
-    checker.addClass("red-checker");
-    checker.removeClass("blue-checker");
-  }
-}
 
 function renderBoard() {
   return `
@@ -66,4 +48,30 @@ function parity(num) {
 
 function cellColor(rowNum, cellNum) {
   return parity(rowNum) == parity(cellNum) ? "blue" : "red";
+}
+
+function moveSelectedCheckerHere() {
+  console.log("things");
+  if (selectedChecker) {
+    console.log(`move checker here`);
+    let redCell = $(this);
+    console.log(`red cell: `, redCell);
+    let id = redCell.attr("id");
+    console.log(`id: `, id);
+    let idParts = id.split("-");
+    console.log(`idParts = `, idParts);
+
+    selectedChecker.row = idParts[1];
+    selectedChecker.cell = idParts[2];
+    selectedChecker = undefined;
+    renderCheckers();
+  } else {
+    console.log(`select a checker, foo!`);
+  }
+}
+
+function clearBoard() {
+  $(`.red.cell`).html(``);
+  $(`.red.cell`).unbind("click");
+  $(`.out-of-play`).html(``);
 }

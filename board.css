@@ -22,8 +22,8 @@ body {
 }
 
 .cell {
-  width: 10vmin;
-  height: 10vmin;
+  width: 7vmin;
+  height: 7vmin;
   margin: 8px;
   display: inline-block;
   background-color: transparent;
@@ -62,7 +62,12 @@ body {
 }
 
 .selected {
-  outline: none;
   border-color: white;
-  box-shadow: 0 0 20px yellow;
+  box-shadow: 0 0 30px yellow;
+}
+
+.out-of-play {
+  width: 10vmin;
+  height: 10vmin;
+  /* overflow: auto; */
 }
