@@ -1,14 +1,19 @@
 body {
-  background-color: darkgray;
+  background-color: rgb(0, 0, 0);
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #board-container {
   /* border: 3px solid navy; */
   display: inline-block;
-  padding: 20px;
+  padding: 1%;
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7);
 }
 
 .row {
@@ -17,20 +22,23 @@ body {
 }
 
 .cell {
-  width: 8vw;
-  height: 8vw;
-  margin: 0px;
+  width: 10vmin;
+  height: 10vmin;
+  margin: 8px;
   display: inline-block;
-  width: 10vh;
-  height: 10vh;
+  background-color: transparent;
 }
 
 .blue {
-  background-color: #0015bc;
+  background-color: transparent;
+  box-shadow: 0 0 20px blue;
+  /* border: 1px solid rgb(255, 255, 255, 0.5); */
 }
 
 .red {
-  background-color: #ff0000;
+  background-color: transparent;
+  box-shadow: 0 0 20px red;
+  /* border: 1px solid rgb(255, 255, 255, 0.5); */
 }
 
 .checker {
@@ -51,4 +59,10 @@ body {
   /* background-color: rgb(64, 136, 81); */
   background-image: url("Images/Biden-Checkers.jpg");
   background-size: cover;
+}
+
+.selected {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 20px yellow;
 }

@@ -1,8 +1,8 @@
 $(document).ready(function () {
   console.log("document ready");
   $("#board-container").html(renderBoard());
-  $(".red.cell").click(selectChecker);
   renderCheckers();
+  $(".checker").click(selectChecker);
 });
 
 function toggle() {
@@ -66,10 +66,4 @@ function parity(num) {
 
 function cellColor(rowNum, cellNum) {
   return parity(rowNum) == parity(cellNum) ? "blue" : "red";
-}
-
-function selectChecker() {
-  let checker = $(this).children().first();
-  console.log("selecting checker: ", checker);
-  selectedChecker = checker;
 }
