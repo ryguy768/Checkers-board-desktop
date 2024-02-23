@@ -42,7 +42,7 @@ function renderCheckers() {
     } else {
       console.log(`put `, checker, ` into out of play`);
       $(`#out-of-play-${checker.color}`).append(
-        renderChecker(i, checker.color)
+        `<div class="cell">${renderChecker(i, checker.color)}</div>`
       );
     }
   }
@@ -50,7 +50,14 @@ function renderCheckers() {
 }
 
 function renderChecker(i, color) {
-  return `<div id="checker-${i}" class="checker ${color}-checker" bacon="${i}"></div>`;
+  if (checkers[i].isKing) {
+    return `
+<div id="checker-${i}" class="checker ${color}-checker" bacon="${i}">
+    <img src="images/king-crown.png" style="width: 50px; 50px: 100%;"
+</div>
+`;
+  } else
+    return `<div id="checker-${i}" class="checker ${color}-checker" bacon="${i}"></div>`;
 }
 
 function selectChecker() {

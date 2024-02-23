@@ -22,8 +22,8 @@ body {
 }
 
 .cell {
-  width: 7vmin;
-  height: 7vmin;
+  width: 8vmin;
+  height: 8vmin;
   margin: 8px;
   display: inline-block;
   background-color: transparent;
@@ -68,6 +68,5 @@ body {
 
 .out-of-play {
   width: 10vmin;
-  height: 10vmin;
-  /* overflow: auto; */
+  height: 10vmin
 }

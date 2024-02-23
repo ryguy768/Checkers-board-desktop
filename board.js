@@ -63,6 +63,12 @@ function moveSelectedCheckerHere() {
 
     selectedChecker.row = idParts[1];
     selectedChecker.cell = idParts[2];
+    console.log(`the checker I'm moving is `, selectedChecker.color);
+    if (selectedChecker.color == `red` && selectedChecker.row == 1) {
+      console.log(`I'm moving a red checker to the blue home row`);
+      selectedChecker.isKing = true;
+    }
+
     selectedChecker = undefined;
     renderCheckers();
   } else {
