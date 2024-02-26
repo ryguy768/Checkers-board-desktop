@@ -53,12 +53,14 @@ body {
   /* background-color: #080707; */
   background-image: url("Images/Trump-Checker.jpg");
   background-size: cover;
+  color: #ffffff;
 }
 
 .blue-checker {
   /* background-color: rgb(64, 136, 81); */
   background-image: url("Images/Biden-Checkers.jpg");
   background-size: cover;
+  color: yellow;
 }
 
 .selected {
@@ -67,6 +69,12 @@ body {
 }
 
 .out-of-play {
-  width: 10vmin;
-  height: 10vmin
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 15vw;
+}
+i {
+  font-size: 3vmin;
 }
