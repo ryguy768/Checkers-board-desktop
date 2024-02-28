@@ -11,7 +11,7 @@ body {
 
 #board-container {
   /* border: 3px solid navy; */
-  display: inline-block;
+  /* display: inline-block; */
   padding: 1%;
   box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7);
 }
@@ -73,8 +73,5 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 15vw;
-}
-i {
-  font-size: 3vmin;
+  max-width: 10vw;
 }
