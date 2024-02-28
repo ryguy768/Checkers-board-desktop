@@ -52,10 +52,10 @@ function renderCheckers() {
 function renderChecker(i, color) {
   if (checkers[i].isKing) {
     return `
-            <div id="checker-${i}" class="checker ${color}-checker" bacon="${i}">
-                <i class="fas fa-crown"></i>
-            </div>
-        `;
+<div id="checker-${i}" class="checker ${color}-checker" bacon="${i}">
+    <img src="images/king-crown.png" style="width: 50px; 50px: 100%;"
+</div>
+`;
   } else
     return `<div id="checker-${i}" class="checker ${color}-checker" bacon="${i}"></div>`;
 }
